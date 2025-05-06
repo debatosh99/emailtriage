@@ -96,7 +96,7 @@ def email_ocr(message):
     response = requests.post(
         url="https://openrouter.ai/api/v1/chat/completions",
         headers={
-            "Authorization": "Bearer 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",
+            "Authorization": "Bearer sk-or-v1-565699eb43767888f48a6cbf0fcda63ac38d90653851384f413c233552af81fa103f",
             "Content-Type": "application/json",
         },
         data=json.dumps({
