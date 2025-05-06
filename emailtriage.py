@@ -11,8 +11,8 @@ from guidelines import fdata
 import requests
 from sentence_transformers import SentenceTransformer
 
-os.environ["OPENAI_API_KEY"]="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"
-os.environ["OPENROUTER_API_KEY"]="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"
+os.environ["OPENAI_API_KEY"]="sk-or-v1-565699eb43767888f48a6cbf0fcda63ac38d90653851384f413c233552af81fa103f"
+os.environ["OPENROUTER_API_KEY"]="sk-or-v1-565699eb43767888f48a6cbf0fcda63ac38d90653851384f413c233552af81fa103f"
 
 
 
@@ -36,7 +36,7 @@ def get_openrouter_embedding(text, model_name="huggingface/all-mpnet-base-v2"):
     url = "https://openrouter.ai/api/v1/embeddings"
     #url = "https://openrouter.ai/api/v1"
     headers = {
-        "Authorization": f"Bearer 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",
+        "Authorization": f"Bearer sk-or-v1-565699eb43767888f48a6cbf0fcda63ac38d90653851384f413c233552af81fa103f",
         "Content-Type": "application/json",
     }
     data = {
@@ -270,7 +270,7 @@ def runner(email_content):
     # 1. Initialize LLM
     llm = ChatOpenAI(
         model_name="openai/gpt-3.5-turbo",  # Choose your desired model from OpenRouter
-        openai_api_key="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",  # Pass the API key
+        openai_api_key="sk-or-v1-565699eb43767888f48a6cbf0fcda63ac38d90653851384f413c233552af81fa103f",  # Pass the API key
         base_url="https://openrouter.ai/api/v1",
     )
 
